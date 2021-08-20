@@ -3,11 +3,14 @@ import NavBar from "../NavBar/NavBar";
 import TodoForm from "../TodoForm/TodoForm"
 import TodoList from "../TodoList/TodoList"
 import styles from './TodoListApp.module.scss';
+
 const TodoListApp = () => {
     const [todos, setTodos] = useState([]);
+    const [filterTodo, setFilterTodo] = useState([]);
 
     useEffect(()=> {
         console.log(todos);
+        setFilterTodo(todos);
     }, [todos])
 
     const addTodoHandler = (todo) => {
@@ -42,11 +45,23 @@ const TodoListApp = () => {
         setTodos(newTodos);
     }
 
+    const filterTodoHandler = (value) =>{
+        if(value === "") return setFilterTodo(todos);
+        if(value === "Uncompleted") {
+            const updatedTodos = todos.filter(todo => !todo.isCompleted);
+            setFilterTodo(updatedTodos);
+        }
+        if( value === "Completed") {
+            const updatedTodos = todos.filter(todo => todo.isCompleted);
+            setFilterTodo(updatedTodos);
+        }
+    }
+
     return ( 
         <article className={styles.todoListContainer}>
-            <NavBar unCompleted={todos.filter(todo => !todo.isCompleted).length}/>
+            <NavBar unCompleted={todos.filter(todo => !todo.isCompleted).length} onFilter={filterTodoHandler}/>
             <TodoForm onSubmit={addTodoHandler}/>
-            <TodoList todos={todos} onDelete={deleteTodoHandler} onCompleted={completedTodoHandler} onEdit={editTodoHandler} />
+            <TodoList todos={filterTodo} onDelete={deleteTodoHandler} onCompleted={completedTodoHandler} onEdit={editTodoHandler} />
         </article>
      );
 }

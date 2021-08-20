@@ -1,0 +1,14 @@
+.selectContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    label{
+        margin-right: 7px;
+    }
+
+    .selectBox{
+        width: 8rem;
+        color: #000;
+    }
+}

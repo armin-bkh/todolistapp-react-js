@@ -5,9 +5,13 @@ $item-bg: #11052C;
 .header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 2rem;
 
+    .countContainer{
+        display: flex;
+        align-items: center;
+        
     .badge{
         padding: 5px 10px;
         background-color: $trash;
@@ -20,4 +24,6 @@ $item-bg: #11052C;
         color: $trash;
         font-weight: bold;
     }
+}
+
 }
