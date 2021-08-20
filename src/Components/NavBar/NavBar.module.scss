@@ -1,6 +1,5 @@
-$trash: #F43B86;
-$pencil: #FFE459;
-$item-bg: #11052C;
+$trash: #dbdbdb;
+$item-bg: #dbdbdb;
 
 .header{
     display: flex;
@@ -11,13 +10,14 @@ $item-bg: #11052C;
     .countContainer{
         display: flex;
         align-items: center;
-        
+
     .badge{
         padding: 5px 10px;
         background-color: $trash;
-        color: $pencil;
+        color: #000;
         margin-right: 20px;
         border-radius: 50%;
+        font-weight: bold;
     }
 
     .title{

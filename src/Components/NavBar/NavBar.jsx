@@ -4,6 +4,7 @@ import styles from './NavBar.module.scss';
 const NavBar = ({ unCompleted, onFilter }) => {
   return (
     <header className={styles.header}>
+      <h1>TodoListApp</h1>
       <div className={styles.countContainer}>
       {unCompleted ? (
         <>

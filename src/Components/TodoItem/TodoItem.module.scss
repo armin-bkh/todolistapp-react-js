@@ -1,6 +1,6 @@
 $trash: #F43B86;
 $pencil: #FFE459;
-$item-bg: #11052C;
+$item-bg: #dbdbdb;
 
 .todoItem {
     display: flex;
@@ -15,11 +15,13 @@ $item-bg: #11052C;
         padding: 5px 15px;
         border-radius: 5px;
         font-size: 1.2rem;
+        color: #000;
+        font-weight: bold;
     }
 
     .isCompleted {
-        text-decoration: 1px line-through #d1cfcf;
-        color: #d1cfcf93;
+        text-decoration: 1px line-through #494949;
+        color: #4e4e4e93;
     }
 
     .todoItemBtn {

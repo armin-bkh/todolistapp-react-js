@@ -1,3 +1,6 @@
+$trash: #dbdbdb;
+$pencil: #FFE459;
+
 .selectContainer{
     display: flex;
     align-items: center;
@@ -5,10 +8,12 @@
 
     label{
         margin-right: 7px;
+        font-weight: bold;
+        color: $trash;
     }
 
     .selectBox{
-        width: 8rem;
+        width: 10rem;
         color: #000;
     }
 }
