@@ -1,0 +1,23 @@
+$trash: #F43B86;
+$pencil: #FFE459;
+$item-bg: #11052C;
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    .badge{
+        padding: 5px 10px;
+        background-color: $trash;
+        color: $pencil;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+
+    .title{
+        color: $trash;
+        font-weight: bold;
+    }
+}

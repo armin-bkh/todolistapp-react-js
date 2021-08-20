@@ -6,11 +6,14 @@ $btn-bg: #F43B86;
 .todoForm {
     width: 100%;
     display: flex;
-    margin-top: 10px;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
 
     .todoInput {
         flex-grow: 1;
-        padding: 10px 20px;
+        padding: 5px 15px;
         background-color: $input-bg;
         outline: none;
         border: none;

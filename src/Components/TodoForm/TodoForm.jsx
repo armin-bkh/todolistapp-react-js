@@ -3,7 +3,7 @@ import { BiCheck } from "react-icons/bi";
 import styles from './TodoForm.module.scss';
 
 const TodoForm = ({ onSubmit, item }) => {
-  const [todo, setTodo] = useState('');
+  const [todo, setTodo] = useState(item ? item.value : '');
   const [holder, setHolder] = useState(true);
   const inputRef = useRef();
 

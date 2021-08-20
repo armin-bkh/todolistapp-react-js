@@ -4,7 +4,10 @@ $item-bg: #11052C;
 
 .todoItem {
     display: flex;
-    margin-top: 10px;
+    
+    &:not(:last-child){
+    margin-bottom: 10px;
+}
 
     .todoItemText {
         background-color: $item-bg;

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import NavBar from "../NavBar/NavBar";
 import TodoForm from "../TodoForm/TodoForm"
 import TodoList from "../TodoList/TodoList"
 import styles from './TodoListApp.module.scss';
@@ -43,6 +44,7 @@ const TodoListApp = () => {
 
     return ( 
         <article className={styles.todoListContainer}>
+            <NavBar unCompleted={todos.filter(todo => !todo.isCompleted).length}/>
             <TodoForm onSubmit={addTodoHandler}/>
             <TodoList todos={todos} onDelete={deleteTodoHandler} onCompleted={completedTodoHandler} onEdit={editTodoHandler} />
         </article>
