@@ -1,10 +1,14 @@
 $input-bg: #11052C;
-$btn-bg: #FFE459;
+$btn-color: #FFE459;
+$btn-bg: #F43B86;
 
-.todoForm{
+
+.todoForm {
     width: 100%;
     display: flex;
-    .todoInput{
+    margin-top: 10px;
+
+    .todoInput {
         flex-grow: 1;
         padding: 10px 20px;
         background-color: $input-bg;
@@ -12,13 +16,32 @@ $btn-bg: #FFE459;
         border: none;
         color: #fff;
         border-radius: 5px 0 0 5px;
+
+        &::placeholder {
+            color: rgb(170, 170, 170);
+        }
     }
-    .todoInsertBtn{
+
+    .todoInsertBtn {
         padding: 10px 20px;
         background-color: $btn-bg;
         outline: none;
         border: none;
-        color: #fff;
+        color: $btn-color;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        font-weight: bold;
         border-radius: 0 5px 5px 0;
+    }
+
+    .checkBtn {
+        font-size: 1.5rem;
+        background-color: $btn-color;
+        color: $btn-bg;
+        outline: none;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        font-weight: bold;
+        padding: 5px 15px;
     }
 }

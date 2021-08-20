@@ -1,0 +1,40 @@
+$trash: #F43B86;
+$pencil: #FFE459;
+$item-bg: #11052C;
+
+.todoItem {
+    display: flex;
+    margin-top: 10px;
+
+    .todoItemText {
+        background-color: $item-bg;
+        flex-grow: 1;
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+    }
+
+    .isCompleted {
+        text-decoration: 1px line-through #d1cfcf;
+        color: #d1cfcf93;
+    }
+
+    .todoItemBtn {
+        margin-left: 5px;
+        padding: 5px 15px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+    }
+
+    .todoITemPencil {
+        background-color: $pencil;
+        color: $trash;
+    }
+
+    .todoItemTrash {
+        background-color: $trash;
+        color: $pencil;
+    }
+}
