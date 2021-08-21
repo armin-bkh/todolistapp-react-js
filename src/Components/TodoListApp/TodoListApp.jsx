@@ -7,12 +7,11 @@ import styles from './TodoListApp.module.scss';
 const TodoListApp = () => {
     const [todos, setTodos] = useState([]);
     const [filterTodo, setFilterTodo] = useState([]);
-    const [filter, setFilter] = useState('');
+    const [filter, setFilter] = useState('All');
 
     useEffect(()=> {
-        console.log(todos);
         filterTodoHandler(filter);
-    }, [todos, filter])
+    }, [todos ,filter])
 
     const addTodoHandler = (todo) => {
         const newTodo = {
@@ -47,7 +46,7 @@ const TodoListApp = () => {
     }
 
     const filterTodoHandler = (value) =>{
-        if(value === "") return setFilterTodo(todos);
+        if(value === "All") setFilterTodo(todos);
         if(value === "Uncompleted") {
             const updatedTodos = todos.filter(todo => !todo.isCompleted);
             setFilterTodo(updatedTodos);

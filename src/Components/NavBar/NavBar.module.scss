@@ -1,29 +1,34 @@
-$trash: #dbdbdb;
-$item-bg: #dbdbdb;
+$bg: #dbdbdb;
+$trash: #F43B86;
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
 
-    .countContainer{
+    .countContainer {
         display: flex;
         align-items: center;
 
-    .badge{
-        padding: 5px 10px;
-        background-color: $trash;
-        color: #000;
-        margin-right: 20px;
-        border-radius: 50%;
-        font-weight: bold;
+        .badge {
+            padding: 5px 10px;
+            background-color: $bg;
+            color: #000;
+            margin-right: 20px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        .title {
+            font-weight: bold;
+        }
+
+
     }
 
-    .title{
-        color: $trash;
-        font-weight: bold;
+    .AppTitle {
+        color: $bg;
+        font-size: 2.5rem;
     }
-}
-
 }

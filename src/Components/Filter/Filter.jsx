@@ -2,17 +2,15 @@ import { useState } from "react";
 import SelectBox from "../common/SelectBox/SelectBox";
 
 const options = [
-    {value: "", label: "All"},
+    {value: "All", label: "All"},
     {value: "Uncompleted", label: "Uncompleted"},
     {value: "Completed", label: "Completed"},
 ];
 
-const FilterTodos = ({onFilter, filter, setFilter}) => {
+const FilterTodos = ({ filter, setFilter }) => {
 
     const changeHandler = (e) => {
-        const value = e.value;
-        setFilter(value);
-        onFilter(value);
+        setFilter(e.value);
     }
 
     return ( 

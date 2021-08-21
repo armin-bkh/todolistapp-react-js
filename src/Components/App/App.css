@@ -11,3 +11,12 @@ body{
   flex-direction: column;
   align-items: center;
 }
+
+
+@media only screen and (max-width:1000px){
+  .App { width: 40rem; }
+}
+
+@media only screen and (max-width:800px){
+  .App { width: 30rem; }
+}
