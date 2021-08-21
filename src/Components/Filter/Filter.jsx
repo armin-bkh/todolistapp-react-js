@@ -7,12 +7,12 @@ const options = [
     {value: "Completed", label: "Completed"},
 ];
 
-const FilterTodos = ({onFilter}) => {
-    const [filter, setFilter] = useState('');
+const FilterTodos = ({onFilter, filter, setFilter}) => {
 
     const changeHandler = (e) => {
-        setFilter(e.value);
-        onFilter(e.value);
+        const value = e.value;
+        setFilter(value);
+        onFilter(value);
     }
 
     return ( 

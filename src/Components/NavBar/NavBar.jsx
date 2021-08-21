@@ -1,10 +1,10 @@
 import FilterTodos from '../Filter/Filter';
 import styles from './NavBar.module.scss';
 
-const NavBar = ({ unCompleted, onFilter }) => {
+const NavBar = ({ unCompleted, onFilter, filter, setFilter }) => {
   return (
     <header className={styles.header}>
-      <h1>TodoListApp</h1>
+      <h1>TodoList App</h1>
       <div className={styles.countContainer}>
       {unCompleted ? (
         <>
@@ -16,7 +16,7 @@ const NavBar = ({ unCompleted, onFilter }) => {
         </>
       )}
       </div>
-      <FilterTodos onFilter={onFilter}/>
+      <FilterTodos filter={filter} setFilter={setFilter} onFilter={onFilter}/>
     </header>
   );
 };
