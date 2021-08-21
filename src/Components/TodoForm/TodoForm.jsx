@@ -26,7 +26,7 @@ const TodoForm = ({ onSubmit, item }) => {
   };
   return (
     <form className={styles.todoForm} onSubmit={submitHandler}>
-      <input className={styles.todoInput} ref={inputRef} type="text" placeholder={holder ? 'write to do' : 'you must write what do you want to do'} value={todo} onChange={changeHandler} />
+      <input className={styles.todoInput} ref={inputRef} type="text" placeholder={holder ? 'write to do' : 'you must fill it'} value={todo} onChange={changeHandler} />
       <button type="submit" className={item ? styles.checkBtn : styles.todoInsertBtn}>{item ? <BiCheck /> : "insert"}</button>
     </form>
   );
