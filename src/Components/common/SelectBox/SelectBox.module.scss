@@ -6,14 +6,12 @@ $pencil: #FFE459;
     align-items: center;
     justify-content: center;
 
-    label{
-        margin-right: 7px;
-        font-weight: bold;
-        color: $trash;
-    }
-
     .selectBox{
         width: 10rem;
         color: #000;
+
+        @media only screen and (max-width:1000px){
+            width: 8rem;
+        }
     }
 }

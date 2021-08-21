@@ -17,6 +17,10 @@ $item-bg: #dbdbdb;
         font-size: 1.2rem;
         color: #000;
         font-weight: bold;
+
+        @media only screen and (max-width:700px){
+            font-size: .8rem;
+        }
     }
 
     .isCompleted {
@@ -31,6 +35,10 @@ $item-bg: #dbdbdb;
         outline: none;
         border-radius: 5px;
         font-size: 1.2rem;
+
+        @media only screen and (max-width:700px){
+            font-size: .6rem;
+        }
     }
 
     .todoITemPencil {

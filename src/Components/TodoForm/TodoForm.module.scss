@@ -22,6 +22,10 @@ $btn-bg: #F43B86;
         font-weight: bold;
         border-radius: 5px 0 0 5px;
 
+        @media only screen and (max-width:700px){
+        font-size: .8rem;
+        }
+
         &::placeholder {
             color: rgb(170, 170, 170);
         }
@@ -37,6 +41,10 @@ $btn-bg: #F43B86;
         font-size: 1rem;
         font-weight: bold;
         border-radius: 0 5px 5px 0;
+        
+        @media only screen and (max-width:700px){
+            font-size: .6rem;
+        }
     }
 
     .checkBtn {
@@ -48,5 +56,9 @@ $btn-bg: #F43B86;
         border-radius: 0 5px 5px 0;
         font-weight: bold;
         padding: 5px 15px;
+
+        @media only screen and (max-width:700px){
+            font-size: .8rem;
+        }
     }
 }

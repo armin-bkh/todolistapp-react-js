@@ -14,7 +14,7 @@ const FilterTodos = ({ filter, setFilter }) => {
     }
 
     return ( 
-        <SelectBox label="Filter By" setFilter={setFilter} value={filter.value} onChange={changeHandler} options={options}/>
+        <SelectBox setFilter={setFilter} value={filter.value} onChange={changeHandler} options={options}/>
      );
 }
  
