@@ -1,12 +1,12 @@
-$bg: #dbdbdb;
-$trash: #F43B86;
+$bg: #082032;
+$trash: #FF4C29;
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     .countContainer {
         display: flex;
@@ -17,7 +17,7 @@ $trash: #F43B86;
         .badge {
             padding: 5px 10px;
             background-color: $bg;
-            color: #000;
+            color: #fff;
             margin-right: 20px;
             border-radius: 50%;
             font-weight: bold;
@@ -53,7 +53,7 @@ $trash: #F43B86;
     }
 
     .AppTitle {
-        color: $bg;
+        color: #fff;
         margin-bottom: 1rem;
         font-size: 2rem;
 
