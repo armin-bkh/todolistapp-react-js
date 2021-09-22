@@ -7,15 +7,22 @@ import styles from './TodoListApp.module.scss';
 const TodoListApp = () => {
     const [todos, setTodos] = useState([]);
     const [filterTodo, setFilterTodo] = useState([]);
-    const [filter, setFilter] = useState('All');
+    const [filter, setFilter] = useState({label: 'All', value: 'All'});
+
+    useEffect(()=>{
+        const savedTodos = JSON.parse(localStorage.getItem('todos'));
+        setTodos(savedTodos);
+    }, [])
+    
 
     useEffect(()=> {
-        filterTodoHandler(filter);
+        localStorage.setItem('todos', JSON.stringify(todos));
+        filterTodoHandler(filter.value);
     }, [todos ,filter])
 
     const addTodoHandler = (todo) => {
         const newTodo = {
-            id: todos.length + 1,
+            id: new Date().getTime(),
             value: todo,
             isCompleted: false,
         }

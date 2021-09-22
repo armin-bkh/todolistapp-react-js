@@ -10,11 +10,11 @@ const options = [
 const FilterTodos = ({ filter, setFilter }) => {
 
     const changeHandler = (e) => {
-        setFilter(e.value);
+        setFilter(e);
     }
 
     return ( 
-        <SelectBox setFilter={setFilter} value={filter.value} onChange={changeHandler} options={options}/>
+        <SelectBox setFilter={setFilter} value={filter} onChange={changeHandler} options={options}/>
      );
 }
  
