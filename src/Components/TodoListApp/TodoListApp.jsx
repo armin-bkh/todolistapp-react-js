@@ -11,7 +11,7 @@ const TodoListApp = () => {
 
     useEffect(()=>{
         const savedTodos = JSON.parse(localStorage.getItem('todos'));
-        setTodos(savedTodos);
+        setTodos(savedTodos || []);
     }, [])
     
 
