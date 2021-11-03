@@ -1,6 +1,6 @@
-$input-bg: #082032;
-$btn-color: #334756;
-$btn-bg: #FF4C29;
+$input-bg: #fff;
+$btn-color: #fff;
+$btn-bg: #63abe2;
 
 
 .todoForm {
@@ -17,14 +17,14 @@ $btn-bg: #FF4C29;
         background-color: $input-bg;
         outline: none;
         border: none;
-        color: #fff;
+        color: #000;
         font-size: 1.2rem;
         font-weight: 400;
         border-radius: 5px 0 0 5px;
 
         @media only screen and (max-width:700px){
         font-size: .8rem;
-        padding: 2.5px 7.5px;
+        // padding: 2.5px 7.5px;
         }
 
         &::placeholder {
@@ -44,8 +44,8 @@ $btn-bg: #FF4C29;
         border-radius: 0 5px 5px 0;
         
         @media only screen and (max-width:700px){
-            font-size: .6rem;
-            padding: 5px 10px;
+            font-size: .8rem;
+            // padding: 5px 10px;
         }
     }
 

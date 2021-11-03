@@ -1,7 +1,9 @@
-$bg-color: #2C394B;
+$bg-color: #f0f0f0;
 .todoListContainer{
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border-radius: 15px;
     background: $bg-color;
+    box-shadow:  15px 15px 15px #a1a1a1,
+                -15px -15px 15px #ffffff;
 }

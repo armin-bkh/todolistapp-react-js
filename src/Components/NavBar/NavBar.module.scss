@@ -11,7 +11,7 @@ $trash: #FF4C29;
     
     .title {
         font-weight: 400;
-        color: $bg;
+        color: #000;
 
         @media only screen and (max-width:1000px){
             font-size: .8rem;
@@ -24,7 +24,7 @@ $trash: #FF4C29;
     }
 
     .AppTitle {
-        color: #fff;
+        color: #63abe2;
         margin-bottom: 1rem;
         font-size: 2rem;
 
@@ -46,19 +46,25 @@ $trash: #FF4C29;
         width: 100%;
 
         .badge {
-            padding: 5px 10px;
-            background-color: $bg;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #63abe2;
             color: #fff;
             margin-right: 20px;
             border-radius: 50%;
             font-weight: 400;
-            font-size: .8rem;
+            font-size: 1rem;
             @media only screen and (max-width:1000px){
                 margin-right: 10px;
-                font-size: .6rem;
+                font-size: .8rem;
             }
             @media only screen and (max-width:700px){
-                font-size: .5rem;
+                // font-size: .5rem;
+                width: 20px;
+                height: 20px;
                 padding: 2.5px 5px;
                 margin-right: 5px;
             }

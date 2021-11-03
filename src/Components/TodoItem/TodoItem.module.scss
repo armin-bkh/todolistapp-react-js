@@ -1,6 +1,6 @@
-$trash: #FF4C29;
+$trash: #fff;
 $pencil: #334756;
-$item-bg: #082032;
+$item-bg: #63abe2;
 
 .todoItem {
     display: flex;
@@ -19,8 +19,8 @@ $item-bg: #082032;
         font-weight: 400;
 
         @media only screen and (max-width:700px){
-            font-size: .8rem;
-            padding: 2.5px 7.5px;
+            font-size: 1rem;
+        //     padding: 2.5px 7.5px;
         }
     }
 
@@ -38,19 +38,26 @@ $item-bg: #082032;
         font-size: 1.2rem;
 
         @media only screen and (max-width:700px){
-            font-size: .6rem;
-            padding: 2.5px 7.5px;
+            font-size: 1rem;
+            padding: 2.5px 10px;
             margin-left: 2.5px;
         }
     }
 
     .todoITemPencil {
         background-color: $pencil;
-        color: $trash;
+        color: $item-bg;
     }
 
     .todoItemTrash {
         background-color: $trash;
-        color: $pencil;
+        color: #f11b1b;
+        border: 2px solid #f11b1b;
+        transition: all .3s ease;
+
+        &:hover{
+            background-color: #f11b1b;
+            color: #fff;
+        }
     }
 }
